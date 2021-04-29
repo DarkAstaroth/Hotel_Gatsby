@@ -1,8 +1,11 @@
 import * as React from "react"
+import Layout from '../components/layout';
 
 const IndexPage = () => {
   return (
-    <h1>Hotel Gatsby</h1>
+    <Layout>
+      <h1>Gatsby Hotel</h1>
+    </Layout>
   );
 };
 
