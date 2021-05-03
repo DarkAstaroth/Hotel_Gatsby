@@ -19,11 +19,17 @@ const ContenidoInicio = () => {
         }
     `);
 
-    console.log(informacion);
+    const { titulo, contenido, imagen } = informacion.allDatoCmsPagina.nodes[0];
 
     return (
         <>
-            <h2>Titulo de Pagina</h2>
+            <h2>{titulo}</h2>
+            <div>
+                <p>
+                    {contenido}
+                </p>
+                <img src={imagen.fluid.src} alt=""/>
+            </div>
         </>
     );
 }
