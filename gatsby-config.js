@@ -30,8 +30,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+
+    {
+      resolve: 'gatsby-source-datocms',
+      options: {
+        apiToken : '92bb6b4a91aa053246334bbba8051a'
+      }
+    }
   ],
 }
